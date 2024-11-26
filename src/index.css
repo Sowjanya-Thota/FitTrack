@@ -1,0 +1,39 @@
+/* src/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* src/index.css or App.css */
+/* src/index.css */
+
+/* Light theme */
+:root {
+  --bg-color: #fff;
+  --text-color: #333333;
+  --primary-color: #007bff;
+  --subtext-color: #555555;
+  --border-color: #e0e0e0;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;           /* Dark gray background */
+  --text-color: #e0e0e0;         /* Light gray text */
+  --primary-color: #4da8da;      /* Lighter blue for primary color */
+  --subtext-color: #aaaaaa;      /* Medium gray for subtext */
+  --border-color: #1a1b4d;       /* Darker gray for borders */
+  --border2-color:#2c2c57;
+  --border3-color:#5e92f9;
+  --border4-color:#3a386f;
+  --border5-color:#2b2a58;
+  --border6-color:rgba(77, 136, 255, 0.7);
+  --boxshadow-color:rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--border-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
